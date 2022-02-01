@@ -155,8 +155,10 @@
     </p>
   </section>
   <!-- footer section -->
+  <!-- Whatsapp -->
+  <div id="myButton"></div>
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- progreesbar script -->
 
@@ -190,4 +192,52 @@
   <!-- end google map js -->
 </body>
 
+
+<!-- whatsapp -->
+<script type="text/javascript">
+  $("#myButton").venomButton({
+    phone: "5521990000000",
+    popupMessage: "Hello Bunda, butuh bantuan?",
+    message: "Saya mau order doodle.",
+    showPopup: true,
+    position: "right",
+    linkButton: false,
+    showOnIE: false,
+    headerTitle: "Welcome!",
+    headerColor: "#25d366",
+    backgroundColor: "#25d366",
+    buttonImage: '<img src="whatsapp.svg" />',
+  });
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-36251023-1"]);
+  _gaq.push(["_setDomainName", "jqueryscript.net"]);
+  _gaq.push(["_trackPageview"]);
+
+  (function () {
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  try {
+    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: "HEAD", mode: "no-cors" }))
+      .then(function (response) {
+        return true;
+      })
+      .catch(function (e) {
+        var carbonScript = document.createElement("script");
+        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+        carbonScript.id = "_carbonads_js";
+        document.getElementById("carbon-block").appendChild(carbonScript);
+      });
+  } catch (error) {
+    console.log(error);
+  }
+</script>
 </html>
